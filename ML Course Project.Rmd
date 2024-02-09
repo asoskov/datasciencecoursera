@@ -36,7 +36,7 @@ train <- train[,-c(1:7)]
 test <- test[,-c(1:7)]
 ```
 
-Next step is to split train dataset in order to comply with cross-validation requirement.
+Next step is to split train dataset in order to comply with cross-validation requirement (I'm going to fit my models on train_cv set of a whole train dataset, then watch on results from test_cv set and after choosing best model I'll fit it on real test set. This is an idea of a cross-validation). As for expected sample error, I think that it will be about 15% maybe, if it is lower I will be happy.  
 
 ```{r, echo = TRUE}
 set.seed(1)
